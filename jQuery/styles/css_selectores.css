@@ -1,0 +1,54 @@
+﻿.classh1 {
+    color: red;
+}
+
+#menu {
+    overflow: hidden;
+}
+
+.horizontal {
+    float: left;
+    list-style: none;
+    margin: 10px;
+}
+
+.sub-level {
+    background: #ffc;
+}
+
+a {
+    color: #00f;
+}
+
+    a.mailto {
+        color: #f00;
+    }
+
+    a.arlink {
+        color: #090;
+    }
+
+    a.mysite {
+        text-decoration: none;
+        border-bottom: 1px dotted #00f;
+    }
+
+.odd {
+    color: Fuchsia;
+}
+
+.even {
+    color: Green;
+}
+
+.destacado {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.padreh1 {
+    background-color: Orange;
+}
+
+.cambiarp {
+}

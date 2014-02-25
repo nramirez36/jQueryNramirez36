@@ -1,0 +1,37 @@
+﻿.animate
+{
+    background-color:Yellow;
+    width:300px;
+    height:100px;
+    position:relative;
+    }
+    
+.callback
+{
+    background-color:Fuchsia;
+    width:300px;
+    height:100px;
+    position:relative;
+    }
+
+#ejemploh1
+{
+    cursor:pointer;
+    }
+
+.boton
+{
+    width:100px;
+    height:100px;
+    float:left;
+    }
+    
+.clear
+{
+    clear:both;
+    }
+    
+span
+{
+    cursor:pointer;
+    }

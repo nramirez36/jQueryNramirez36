@@ -1,0 +1,15 @@
+﻿.nuevocolor {
+    color: Fuchsia;
+}
+
+#borrar {
+    width: 60px;
+    height: 20px;
+    background-color: #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ocultar {
+    display: none;
+}
