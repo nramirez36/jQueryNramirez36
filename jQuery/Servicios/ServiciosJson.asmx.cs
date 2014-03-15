@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Services;
 using jQuery.Entidades;
 using jQuery.Logica_de_Negocio;
+using System.Web.Script.Services;
 namespace jQuery.Servicios
 {
     /// <summary>
@@ -14,7 +15,7 @@ namespace jQuery.Servicios
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // Para permitir que se llame a este servicio web desde un script, usando ASP.NET AJAX, quite la marca de comentario de la línea siguiente. 
-     [System.Web.Script.Services.ScriptService]
+    [System.Web.Script.Services.ScriptService]
     public class ServiciosJson : System.Web.Services.WebService
     {
 
@@ -46,6 +47,28 @@ namespace jQuery.Servicios
         {
             List<Localidad> lstLocalidad = Localidades.Listar(codDepartamento).ToList();
             return lstLocalidad;
+        }
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public string[] GetNombreLocalidades(string prefix)
+        {
+            List<string> elements = new List<string>();
+            List<Localidad> lstLocalidades = Localidades.ListarNombre(prefix).ToList();
+            foreach (var item in lstLocalidades)
+            {
+                elements.Add(item.Nombre);
+            }
+            var res = from dato in elements
+                      where dato.ToUpper().Contains(prefix.ToUpper())
+                      select dato;
+            return res.ToArray();
+        }
+        [WebMethod]
+        public List<Localidad> GetNombreLocalidad(string prefix)
+        {
+            var loc = Localidades.ListarNombre("").ToList();
+            var nom = loc.Where(m => m.Nombre.ToLower().StartsWith(prefix.ToLower()));
+            return nom.ToList();
         }
     }
 }

@@ -23,5 +23,19 @@ namespace jQuery.Logica_de_Negocio
                 throw;
             }
         }
+        public static IEnumerable<Localidad> ListarNombre(string pNombre)
+        {
+            Database odb = DatabaseFactory.CreateDatabase("jQuery");
+            try
+            {
+                string par = "%" + pNombre + "%";
+                return odb.ExecuteSprocAccessor("BuscarLocalidades", MapBuilder<Localidad>.MapAllProperties().DoNotMap(p => p.Departamento_Id).DoNotMap(p => p.Id).Build());//, pNombre);//par);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Problemas Al Listar Los Ciudad: " + ex.Message);
+                throw;
+            }
+        }
     }
 }
