@@ -29,6 +29,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PublishDatabases>false</PublishDatabases>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -83,6 +84,7 @@
     <Content Include="Efectos.aspx" />
     <Content Include="EjercicioFinal.aspx" />
     <Content Include="Eventos.aspx" />
+    <Content Include="GoogleMaps.aspx" />
     <Content Include="Images\armadopagina.jpg" />
     <Content Include="Images\bg_footer.jpg" />
     <Content Include="Images\bg_header.jpg" />
@@ -118,6 +120,7 @@
     <Content Include="scripts\jquery.js" />
     <Content Include="scripts\jquery.validate.js" />
     <Content Include="scripts\json2.js" />
+    <Content Include="scripts\metro.min.js" />
     <Content Include="Selectores.aspx" />
     <Content Include="Servicios\ServiciosJson.asmx" />
     <Content Include="styles\colorbox.css" />
@@ -142,6 +145,8 @@
     <Content Include="styles\images\ui-icons_ffd27a_256x240.png" />
     <Content Include="styles\images\ui-icons_ffffff_256x240.png" />
     <Content Include="styles\jquery-ui-1.10.4.custom.css" />
+    <Content Include="styles\metro-bootstrap-responsive.css" />
+    <Content Include="styles\metro-bootstrap.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +195,13 @@
     </Compile>
     <Compile Include="Eventos.aspx.designer.cs">
       <DependentUpon>Eventos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleMaps.aspx.cs">
+      <DependentUpon>GoogleMaps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoogleMaps.aspx.designer.cs">
+      <DependentUpon>GoogleMaps.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -243,7 +255,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>43143</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
