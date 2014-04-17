@@ -77,18 +77,24 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Accordion.aspx" />
     <Content Include="Autocompletar.aspx" />
     <Content Include="Base de Datos\script.txt" />
+    <Content Include="DatePicker.aspx" />
     <Content Include="DefaultjQuery.aspx" />
     <Content Include="DropDownListCascadad.aspx" />
     <Content Include="Efectos.aspx" />
     <Content Include="EjercicioFinal.aspx" />
     <Content Include="Eventos.aspx" />
+    <Content Include="fonts\iconFont.dev.svg" />
+    <Content Include="fonts\iconFont.svg" />
+    <Content Include="fonts\metroSysIcons.svg" />
     <Content Include="GoogleMaps.aspx" />
     <Content Include="Images\armadopagina.jpg" />
     <Content Include="Images\bg_footer.jpg" />
     <Content Include="Images\bg_header.jpg" />
     <Content Include="Images\bg_header.png" />
+    <Content Include="Images\calc.png" />
     <Content Include="Images\Logo.png" />
     <Content Include="Images\montaña.jpg" />
     <Content Include="Images\nuevas\Snowboard1.jpg" />
@@ -110,7 +116,10 @@
     <Content Include="Librerias\Microsoft.Practices.Unity.dll" />
     <Content Include="Librerias\Microsoft.Practices.Unity.Interception.dll" />
     <Content Include="ManipulacionDOM.aspx" />
+    <Content Include="ResponsiveDesign.aspx" />
     <Content Include="scripts\galeryview_1.1.js" />
+    <Content Include="scripts\github.info.js" />
+    <Content Include="scripts\hitua.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.4.2.min.js" />
     <Content Include="scripts\jquery-ui-1.10.4.custom.js" />
@@ -119,7 +128,9 @@
     <Content Include="scripts\jquery.galery.js" />
     <Content Include="scripts\jquery.js" />
     <Content Include="scripts\jquery.validate.js" />
+    <Content Include="scripts\jquery.widget.min.js" />
     <Content Include="scripts\json2.js" />
+    <Content Include="scripts\load-metro.js" />
     <Content Include="scripts\metro.min.js" />
     <Content Include="Selectores.aspx" />
     <Content Include="Servicios\ServiciosJson.asmx" />
@@ -129,6 +140,68 @@
     <Content Include="styles\css_ejerciciofinal.css" />
     <Content Include="styles\css_eventos.css" />
     <Content Include="styles\css_selectores.css" />
+    <Content Include="styles\iconFont.css" />
+    <Content Include="styles\imagesMetro\1.jpg" />
+    <Content Include="styles\imagesMetro\2.jpg" />
+    <Content Include="styles\imagesMetro\3.jpg" />
+    <Content Include="styles\imagesMetro\4.jpg" />
+    <Content Include="styles\imagesMetro\5.jpg" />
+    <Content Include="styles\imagesMetro\access.png" />
+    <Content Include="styles\imagesMetro\author.jpg" />
+    <Content Include="styles\imagesMetro\b1.jpg" />
+    <Content Include="styles\imagesMetro\Battlefield_4_Icon.png" />
+    <Content Include="styles\imagesMetro\beer.png" />
+    <Content Include="styles\imagesMetro\BizSparkTile.jpg" />
+    <Content Include="styles\imagesMetro\bizspark_b.png" />
+    <Content Include="styles\imagesMetro\bizspark_b_2.png" />
+    <Content Include="styles\imagesMetro\Calendar-Next.png" />
+    <Content Include="styles\imagesMetro\clouds.jpg" />
+    <Content Include="styles\imagesMetro\clouds2.png" />
+    <Content Include="styles\imagesMetro\Crysis-2-icon.png" />
+    <Content Include="styles\imagesMetro\css-logo.png" />
+    <Content Include="styles\imagesMetro\D3.png" />
+    <Content Include="styles\imagesMetro\download-32.png" />
+    <Content Include="styles\imagesMetro\excel.png" />
+    <Content Include="styles\imagesMetro\excel2013icon.png" />
+    <Content Include="styles\imagesMetro\fluent-menu.jpg" />
+    <Content Include="styles\imagesMetro\Folder-Rename.png" />
+    <Content Include="styles\imagesMetro\fork-32.png" />
+    <Content Include="styles\imagesMetro\grid2.png" />
+    <Content Include="styles\imagesMetro\jeki_chan.jpg" />
+    <Content Include="styles\imagesMetro\jek_vorobey.jpg" />
+    <Content Include="styles\imagesMetro\jetbrains.png" />
+    <Content Include="styles\imagesMetro\jolie.jpg" />
+    <Content Include="styles\imagesMetro\live1.jpg" />
+    <Content Include="styles\imagesMetro\live2.jpg" />
+    <Content Include="styles\imagesMetro\me.jpg" />
+    <Content Include="styles\imagesMetro\meter-210.png" />
+    <Content Include="styles\imagesMetro\Metro-UI-CSS.png" />
+    <Content Include="styles\imagesMetro\myface.jpg" />
+    <Content Include="styles\imagesMetro\Notebook-Save.png" />
+    <Content Include="styles\imagesMetro\nuget-logo.png" />
+    <Content Include="styles\imagesMetro\obama.jpg" />
+    <Content Include="styles\imagesMetro\Office365.jpg" />
+    <Content Include="styles\imagesMetro\onenote.png" />
+    <Content Include="styles\imagesMetro\onenote2013icon.png" />
+    <Content Include="styles\imagesMetro\Open_Source_Iniative.png" />
+    <Content Include="styles\imagesMetro\org-01.png" />
+    <Content Include="styles\imagesMetro\outlook.png" />
+    <Content Include="styles\imagesMetro\phpstorm_7_eap.png" />
+    <Content Include="styles\imagesMetro\phpstorm_tn.png" />
+    <Content Include="styles\imagesMetro\phpstorm_tn_2.png" />
+    <Content Include="styles\imagesMetro\powerpoint.png" />
+    <Content Include="styles\imagesMetro\Print-Quick.png" />
+    <Content Include="styles\imagesMetro\shvarcenegger.jpg" />
+    <Content Include="styles\imagesMetro\spface.jpg" />
+    <Content Include="styles\imagesMetro\tiles-bg-2.jpg" />
+    <Content Include="styles\imagesMetro\tiles-bg.jpg" />
+    <Content Include="styles\imagesMetro\Window-Refresh.png" />
+    <Content Include="styles\imagesMetro\Windows-8-Logo.png" />
+    <Content Include="styles\imagesMetro\windows_8_default_13_wallpaper.jpg" />
+    <Content Include="styles\imagesMetro\windows_modern_logo.png" />
+    <Content Include="styles\imagesMetro\word.png" />
+    <Content Include="styles\imagesMetro\word2013icon.png" />
+    <Content Include="styles\imagesMetro\x.jpg" />
     <Content Include="styles\images\animated-overlay.gif" />
     <Content Include="styles\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
     <Content Include="styles\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
@@ -147,15 +220,47 @@
     <Content Include="styles\jquery-ui-1.10.4.custom.css" />
     <Content Include="styles\metro-bootstrap-responsive.css" />
     <Content Include="styles\metro-bootstrap.css" />
+    <Content Include="styles\ui-lightness\images\animated-overlay.gif" />
+    <Content Include="styles\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="styles\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="styles\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="styles\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="styles\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="styles\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="styles\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="styles\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="styles\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="styles\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="styles\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="styles\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="styles\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="styles\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="styles\ui-lightness\jquery-ui-1.10.4.custom.css" />
+    <Content Include="styles\ui-lightness\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="TemplateMetro.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accordion.aspx.cs">
+      <DependentUpon>Accordion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accordion.aspx.designer.cs">
+      <DependentUpon>Accordion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Autocompletar.aspx.cs">
       <DependentUpon>Autocompletar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Autocompletar.aspx.designer.cs">
       <DependentUpon>Autocompletar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatePicker.aspx.cs">
+      <DependentUpon>DatePicker.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatePicker.aspx.designer.cs">
+      <DependentUpon>DatePicker.aspx</DependentUpon>
     </Compile>
     <Compile Include="DefaultjQuery.aspx.cs">
       <DependentUpon>DefaultjQuery.aspx</DependentUpon>
@@ -221,6 +326,13 @@
       <DependentUpon>ManipulacionDOM.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponsiveDesign.aspx.cs">
+      <DependentUpon>ResponsiveDesign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResponsiveDesign.aspx.designer.cs">
+      <DependentUpon>ResponsiveDesign.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Selectores.aspx.cs">
       <DependentUpon>Selectores.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -232,16 +344,30 @@
       <DependentUpon>ServiciosJson.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="TemplateMetro.aspx.cs">
+      <DependentUpon>TemplateMetro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemplateMetro.aspx.designer.cs">
+      <DependentUpon>TemplateMetro.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Thumbs.db" />
     <Content Include="Images\nuevas\Thumbs.db" />
+    <Content Include="fonts\iconFont.eot" />
+    <Content Include="fonts\iconFont.json" />
+    <Content Include="fonts\iconFont.ttf" />
+    <Content Include="fonts\iconFont.woff" />
+    <Content Include="fonts\metroSysIcons.ttf" />
+    <Content Include="fonts\metroSysIcons.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

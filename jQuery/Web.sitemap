@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Index.aspx" title="Inicio">
+    <siteMapNode url="~/Accordion.aspx" title="Accordion"  description="" />
+    <siteMapNode url="~/Autocompletar.aspx" title="Autocompletar"  description="" />
+
+    <siteMapNode url="~/DatePicker.aspx" title="DatePicker"  description="" />
+    <siteMapNode url="~/DefaultjQuery.aspx" title="DefaultjQuery"  description="" />
+    <siteMapNode url="~/DropDownListCascadad.aspx" title="DropDownListCascadad"  description="" />
+    <siteMapNode url="~/Efectos.aspx" title="Efectos"  description="" />
+    <siteMapNode url="~/EjercicioFinal.aspx" title="EjercicioFinal"  description="" />
+    <siteMapNode url="~/Eventos.aspx" title="Eventos"  description="" />
+    <siteMapNode url="~/GoogleMaps.aspx" title="GoogleMaps"  description="" />
+    <siteMapNode url="~/ManipulacionDOM.aspx" title="ManipulacionDOM"  description="" />
+    <siteMapNode url="~/Selectores.aspx" title="Selectores"  description="" />
+    <siteMapNode url="~/TemplateMetro.aspx" title="TemplateMetro"  description="" />
+  </siteMapNode>
+</siteMap>

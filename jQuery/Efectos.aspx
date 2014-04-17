@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>jQuery - Efectos</title>
     <link href="styles/css_efectos.css" rel="stylesheet" type="text/css" />
     <script src="scripts/jquery.js" type="text/javascript"></script>
@@ -64,12 +64,17 @@
                     $(this).css('backgroundColor', '#f00');
                 });
             });
+            $(".more").toggle(function () {
+                $(this).text("Leer menos...").siblings(".complete").show();
+            }, function () {
+                $(this).text("Leer mas...").siblings(".complete").hide();
+            });
         });
     </script>
 </head>
 <body>
     <form id="form1" runat="server">
-        <h1 id="ejemploh1">Efectos</h1>  
+        <h1 id="ejemploh1">Efectos</h1>
         <br />
         <span id="result"></span>
         <div style="background-color: Blue;" class="boton">
@@ -90,7 +95,8 @@
             otro alguno, pues al fin me quitáis lo que me disteis; pero, de lo demás que tengo
             junto a mi negra y veloz embarcación, nada podrías llevarte tomándolo contra mi
             voluntad. Y si no, ea, inténtalo, para que éstos se enteren también; y presto tu
-            negruzca sangre brotará en torno de mi lanza.</p>
+            negruzca sangre brotará en torno de mi lanza.
+        </p>
         <span class="mas">. . .</span>
         <p>
             304 Después de altercar así con encontradas razones, se levantaron y disolvieron
@@ -98,11 +104,25 @@
             y sus bien proporcionados bajeles con el Menecíada y otros amigos; y el Atrida echó
             al mar una velera nave, escogió veinte remeros, cargó las víctimas de la hecatombe
             para el dios, y, conduciendo a Criseide, la de hermosas mejillas, la embarcó también;
-            fue capitán el ingenioso Ulises.</p>
+            fue capitán el ingenioso Ulises.
+        </p>
         <div class="animate">
         </div>
         <div class="callback">
         </div>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <br />
+        <span class="summary">
+            <p>Lorem ipsum dolor sit amet, vis alterum feugiat sanctus ea. Affert facete eu cum, ut dicta vitae quo. Cum id aeque option epicuri, nec oblique suscipit ad. Et sea odio adhuc altera. Verterem nominati an mel, his diam consetetur ei. Eligendi principes sed no, ubique patrioque vix cu, soluta veritus percipit vim ex.</p>
+        </span>
+        <span class="complete">
+            <p>Pro populo dolorem eu. Justo conclusionemque sea ne. At dicat putent eum. Reprimique delicatissimi vel et.</p>
+            <p>Posse constituam pro eu. Sit graecis appetere at, id his quas possit platonem, ius at nobis decore ullamcorper. Vix ne latine iudicabit constituto, justo fastidii eleifend et pro, ei sit solet dicant mediocrem. Te sit cibo percipit persecuti. Debet convenire suavitate ei vis. Pri utinam labitur temporibus ex.</p>
+        </span>
+        <span class="more">Leer mas...</span>
         <br />
         <br />
         <a href="Index.aspx">Menu Principal</a>
