@@ -17,7 +17,7 @@
                 $('.click p').addClass('ocultar');
             });
         });
-    </script>
+    </script>   
 </head>
 <body>
     <form id="form1" runat="server">

@@ -12,6 +12,7 @@
     <%--<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>--%>
+
     <link href="styles/ui-lightness/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
     <script src="scripts/jquery-1.10.2.js" type="text/javascript"></script>
     <script src="scripts/jquery-ui-1.10.4.custom.js" type="text/javascript"></script>

@@ -6,15 +6,22 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>jQuery - DatePicker</title>
-    
-    <link rel="stylesheet" href="http://jquery-ui.googlecode.com/svn/tags/1.7/themes/redmond/jquery-ui.css" />
+
+    <%--<link rel="stylesheet" href="http://jquery-ui.googlecode.com/svn/tags/1.7/themes/redmond/jquery-ui.css" />--%>
+
     <%--http://jquery-ui.googlecode.com/svn/tags/1.7/themes/redmond/jquery-ui.css--%>
     <%--<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" />--%>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+
+   <%-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>--%>
+
     <%--<link rel="stylesheet" href="styles/jquery-ui-1.10.4.custom.css" />--%>
     <%--<script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="scripts/jquery-ui-1.10.4.custom.min.js"></script>--%>
+
+    <link href="styles/ui-lightness/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
+    <script src="scripts/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="scripts/jquery-ui-1.10.4.custom.js" type="text/javascript"></script>
     <script>
         $(function () {
             $("#txtFecha").datepicker();
@@ -42,8 +49,29 @@
                 minDate: -20,
                 maxDate: "+1M +10D"
             });
+            $("#txtDesde").datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 3,
+                onClose: function (selectedDate) {
+                    $("#txtHasta").datepicker("option", "minDate", selectedDate);
+                }
+            });
+            $("#txtHasta").datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 3,
+                onClose: function (selectedDate) {
+                    $("#txtDesde").datepicker("option", "maxDate", selectedDate);
+                }
+            });
         });
     </script>
+     <style>
+        #ui-datepicker-div {
+            width: 13em;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -75,7 +103,11 @@
                 <asp:TextBox ID="txtAlterno" runat="server"></asp:TextBox>
                 <h3>DatePicker Rango</h3>
                 <asp:TextBox ID="txtFechaRango" runat="server"></asp:TextBox>
+                <h3>DatePicker Entre Fechas</h3>
+                <asp:TextBox ID="txtDesde" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtHasta" runat="server"></asp:TextBox>
                 <asp:HiddenField ID="hdDato" runat="server" />
+
             </div>
             <br />
             <br />
