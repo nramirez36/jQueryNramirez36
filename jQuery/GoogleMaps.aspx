@@ -32,35 +32,12 @@
         }
         window.onload = InitializeMap;
     </script>
-<%--    <script type="text/javascript">
-        function load(longx, longy, direccion, tipoMapa) {
-            var myLatlng = new google.maps.LatLng(longx, longy);
-            var mapOptions = {
-                center: new google.maps.LatLng(longx, longy),
-                zoom: 16,
-                mapTypeId: tipoMapa //google.maps.MapTypeId.HYBRID 
-            };
-            var map = new google.maps.Map(document.getElementById("map"),
-                mapOptions);
-            var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map,
-                title: direccion
-            });
-            marker.info = new google.maps.InfoWindow({
-                content: direccion
-            });
-            google.maps.event.addListener(marker, "mouseover", function () { marker.info.open(map, marker); });
-            marker.info.open(map, marker);
-        }
-    </script>--%>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <h2>Ejemplo de Google Maps</h2>
         </div>
-        <%--<button onclick="load('-31.41089','-64.19096', 'Córdoba Capital&lt;br /&gt; INFO &lt;br /&gt; DATOS',google.maps.MapTypeId.NORMAL );">Mostrar en el Mapa</button>--%>
         <div id="map" style="width: 304px; top: 81px; left: 220px; position: absolute; height: 238px">
         </div>
         <br />

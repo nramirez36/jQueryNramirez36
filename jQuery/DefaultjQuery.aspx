@@ -14,10 +14,6 @@
             var value = 1;
             var text = 'texto';
 
-            //            var params = new Object();
-            //            params.value = text;
-            //            params.text = text;
-
             $.ajax({
                 type: "POST",
                 url: "Servicios/ServiciosJson.asmx/GetCategorias",

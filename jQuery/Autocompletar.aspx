@@ -7,11 +7,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>jQuery - Autocompletar</title>
     <link rel="stylesheet" href="styles/css_eventos.css" type="text/css" />
-    <%--<script src="scripts/jquery.js" type="text/javascript"></script>--%>
-
-    <%--<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>--%>
 
     <link href="styles/ui-lightness/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
     <script src="scripts/jquery-1.10.2.js" type="text/javascript"></script>
@@ -19,35 +14,6 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            //$('#txtAutocompletar').autocomplete({
-            //    source: function (request, response) {
-            //        $.ajax({
-            //            url: "Servicios/ServiciosJson.asmx/GetNombreLocalidades",
-            //            data: "{'prefix':'" + request.term + "'}",
-            //            datatType: "json",
-            //            type: "POST",
-            //            contentType: "application/json; charset=utf-8",
-            //            success: function (data) {
-            //                response($.map(data.d, function (item) {
-            //                    return {
-            //                        label: item.split('-')[1],
-            //                        val: item.split('-')[0]
-            //                    }
-            //                }))
-            //            },
-            //            error: function (response) {
-            //                alert(response.responseText);
-            //            },
-            //            failure: function (response) {
-            //                alert(response.responseText);
-            //            }
-            //        });
-            //    },
-            //    select: function (e, i) {
-            //        $('#hdDato').val(i.item.val);
-            //    },
-            //    minLength: 2
-            //});
             $(".tb").autocomplete({
                 source: function (request, response) {
                     $.ajax({

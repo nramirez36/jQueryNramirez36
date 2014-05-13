@@ -54,7 +54,6 @@
             <a class="button success" href="#">Agregar</a>--%>
         </div>
         <div class="clearfix"></div>
-
         <%--<h1>SE DEBE QUITAR DE ESTA PAGINA LO SIGUIENTE</h1>
 
         <hr />
