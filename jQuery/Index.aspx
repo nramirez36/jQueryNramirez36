@@ -29,8 +29,10 @@
             <a class="button success" href="Autocompletar.aspx">Autocompletar</a>
             <a class="button success" href="GoogleMaps.aspx">GoogleMaps</a>
             <a class="button success" href="DatePicker.aspx">DatePicker</a>
-            <%--<a class="button success" href="TemplateMetro.aspx">Nueva Pagina de Inicio</a>--%>
+            <a class="button success" href="ResponsiveDesign.aspx">Responsive Design</a>
             <a class="button success" href="Accordion.aspx">Accordion</a>
+            <a class="button success" href="ConfirmModal.aspx">Confirm Modal</a>
+            <a class="button success" href="Colorbox.aspx">Colorbox</a>
         </div>
         <div class="left">
             <%--<a class="button success" href="#">Button</a>

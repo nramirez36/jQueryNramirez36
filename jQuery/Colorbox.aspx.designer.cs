@@ -10,7 +10,7 @@
 namespace jQuery {
     
     
-    public partial class ResponsiveDesign {
+    public partial class Colorbox {
         
         /// <summary>
         /// Control form1.
