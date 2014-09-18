@@ -8,7 +8,7 @@
     <title>jQuery - Colorbox</title>
     <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
     <link media="screen" rel="stylesheet" href="styles/colorbox.css" />
-    <script src="scripts/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="scripts/jquery.colorbox.js"></script>
     <script>
         $(document).ready(function () {
             //Examples of how to assign the ColorBox event to elements
@@ -64,7 +64,7 @@
         <p><a class='example5' href="Images/content/ajax.html" title="Homer Defined">Outside HTML (Ajax)</a></p>
         <p><a class='example5' href="Images/content/flash.html" title="Royksopp: Remind Me">Flash / Video (Ajax/Embedded)</a></p>
         <p><a class='example6' href="http://www.youtube.com/embed/617ANIA5Rqs?rel=0" title="The Knife: We Share Our Mother's Health">Flash / Video (Iframe/Direct Link To YouTube)</a></p>
-        <p><a class='example7' href="http://google.com">Outside Webpage (Iframe)</a></p>
+        <p><a class='example7' href="http://localhost:43143/Index.aspx">Outside Webpage (Iframe)</a></p>
         <p><a class='example8' href="#">Inline HTML</a></p>
 
         <h2>Demonstration of using callbacks</h2>
