@@ -17,8 +17,6 @@
             <hr />
         </header>
         <div class="left">
-            <%--<h1 class="element">Ejemplo de uso de jQuery</h1>
-            <br />--%>
             <a class="button danger" href="Selectores.aspx">Selectores</a>
             <a class="button success" href="Eventos.aspx">Eventos</a>
             <a class="button success" href="Efectos.aspx">Efectos</a>
@@ -34,51 +32,7 @@
             <a class="button success" href="ConfirmModal.aspx">Confirm Modal</a>
             <a class="button success" href="Colorbox.aspx">Colorbox</a>
         </div>
-        <div class="left">
-            <%--<a class="button success" href="#">Button</a>
-            <a class="button success" href="#">Dialog</a>
-            <a class="button success" href="#">Menu</a>
-            <a class="button success" href="#">ProgressBar</a>
-            <a class="button success" href="#">Slider</a>
-            <a class="button success" href="#">Spinner</a>
-            <a class="button success" href="#">Tabs</a>
-            <a class="button success" href="#">ToolTip</a>
-            <a class="button success" href="#">Agregar</a>
-            <a class="button success" href="#">Agregar</a>
-            <a class="button success" href="#">Agregar</a>
-            <a class="button success" href="#">Agregar</a>
-            <a class="button success" href="#">Agregar</a>
-            <a class="button success" href="#">Agregar</a>
-            <a class="button success" href="#">Agregar</a>
-            <a class="button success" href="#">Agregar</a>
-            <a class="button success" href="#">Agregar</a>
-            <a class="button success" href="#">Agregar</a>
-            <a class="button success" href="#">Agregar</a>--%>
-        </div>
         <div class="clearfix"></div>
-        <%--<h1>SE DEBE QUITAR DE ESTA PAGINA LO SIGUIENTE</h1>
-
-        <hr />
-        <table>
-            <tr>
-                <td>
-                    <asp:DropDownList ID="ddlLista" runat="server">
-                    </asp:DropDownList>
-                </td>
-                <td>
-                    <asp:Button ID="btnAgregarUno" runat="server" Text=">" OnClick="btnAgregarUno_Click" />
-                    <br />
-                    <asp:Button ID="btnAgregarTodos" runat="server" Text=">>" OnClick="btnAgregarTodos_Click" />
-                    <br />
-                    <asp:Button ID="btnQuitarTodos" runat="server" Text="<<" OnClick="btnQuitarTodos_Click" />
-                    <br />
-                    <asp:Button ID="btnQuitarUno" runat="server" Text="<" OnClick="btnQuitarUno_Click" />
-                </td>
-                <td>
-                    <asp:ListBox ID="lstLista" runat="server" Height="127px" Width="242px"></asp:ListBox>
-                </td>
-            </tr>
-        </table>--%>
     </form>
 </body>
 </html>
