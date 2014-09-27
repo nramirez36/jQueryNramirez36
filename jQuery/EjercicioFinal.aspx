@@ -25,7 +25,7 @@
                 $(activeTab).fadeIn();
                 return false;
             });
-            http: //www.gmarwaha.com/jquery/jcarousellite/#knownIssues
+            //http: //www.gmarwaha.com/jquery/jcarousellite/#knownIssues
                 $(function () {
                     $('.fotoschicas').jCarouselLite({
                         auto: true,

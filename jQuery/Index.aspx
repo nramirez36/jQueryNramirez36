@@ -31,6 +31,7 @@
             <a class="button success" href="Accordion.aspx">Accordion</a>
             <a class="button success" href="ConfirmModal.aspx">Confirm Modal</a>
             <a class="button success" href="Colorbox.aspx">Colorbox</a>
+            <a class="button success" href="Slider.aspx">Slider</a>
         </div>
         <div class="clearfix"></div>
     </form>
