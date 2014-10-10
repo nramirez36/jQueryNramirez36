@@ -25,13 +25,14 @@
                 title: 'Hola'
             });
             marker.info = new google.maps.InfoWindow({
-                content: direccion
+                content: 'Datos'
             });
             google.maps.event.addListener(marker, "mouseover", function () { marker.info.open(map, marker); });
             marker.info.open(map, marker);
         }
         window.onload = InitializeMap;
     </script>
+    <script src="scripts/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
 </head>
 <body>
     <form id="form1" runat="server">

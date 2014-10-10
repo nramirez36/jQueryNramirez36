@@ -101,7 +101,15 @@
 
             $('#slider1').anythingSlider({
                 theme: 'metallic',
-                easing: 'easeInOutBack',
+                //easing: 'easeInOutBack',
+                //mode: 'f',   // fade mode - new in v1.8!
+                resizeContents: false, // If true, solitary images/objects in the panel will expand to fit the viewport
+                //navigationSize: 3,     // Set this to the maximum number of visible navigation tabs; false to disable
+                autoPlay: true,
+                hashTags: false,
+                buildStartStop: false,
+                toggleControls: false,
+                buildArrows:false,
                 navigationFormatter: function (index, panel) {
                     return ['Slab', 'Parking Lot', 'Drive', 'Glorius Dawn', 'Bjork?', 'Traffic Circle'][index - 1];
                 },
@@ -135,7 +143,7 @@
     <form id="form1" runat="server">
         <div id="page-wrap">
 
-            <div id="nav">
+            <%--<div id="nav">
                 <a class="current" href="index.html">Main Demo</a>
                 <a href="simple.html">Simple Demo</a>
                 <a href="expand.html">Expand Demo</a>
@@ -146,7 +154,7 @@
                 <a class="git" href="https://github.com/CSS-Tricks/AnythingSlider/wiki">Documentation</a>
                 <a class="git" href="https://github.com/CSS-Tricks/AnythingSlider/zipball/master">Download</a>
                 <a class="issue" href="https://github.com/CSS-Tricks/AnythingSlider/issues">Issues</a>
-            </div>
+            </div>--%>
 
             <h5><a href="http://css-tricks.com/examples/AnythingSlider/">Original</a> By <a href="http://css-tricks.com">Chris Coyier</a>,
 		expanded upon by <a href="https://github.com/CSS-Tricks/AnythingSlider/wiki/Credits">many others</a></h5>
